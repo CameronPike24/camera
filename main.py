@@ -7,17 +7,17 @@ import time
 
 
 try:
-from android.permissions import request_permissions, Permission
-request_permissions([
-Permission.CAMERA,
-Permission.WRITE_EXTERNAL_STORAGE,
-Permission.READ_EXTERNAL_STORAGE,
-Permission.INTERNET,
-Permission.BODY_SENSORS,
-Permission.BLUETOOTH
-])
+ from android.permissions import request_permissions, Permission
+ request_permissions([
+ Permission.CAMERA,
+ Permission.WRITE_EXTERNAL_STORAGE,
+ Permission.READ_EXTERNAL_STORAGE,
+ Permission.INTERNET,
+ Permission.BODY_SENSORS,
+ Permission.BLUETOOTH
+ ])
 except Exception as e:
-logging.warn(e)
+ logging.warn(e)
 
 
 
